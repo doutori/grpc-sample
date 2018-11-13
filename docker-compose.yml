@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  go-api:
+    build:
+      context: go-api
+      args:
+        src_path: src/github.com/doutori/grpc-sample/go-api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app:/go/src/github.com/doutori/grpc-sample/go-api
+      - /go/src/github.com/doutori/grpc-sample/
+    # command: realize start -path="." --no-config --run
+    command: /go/bin/go-api
