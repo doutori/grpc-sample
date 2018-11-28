@@ -1,15 +1,23 @@
 version: '3.3'
 
 services:
-  go-api:
+  api:
+    container_name: api
     build:
-      context: go-api
+      context: api
       args:
         src_path: src/github.com/doutori/grpc-sample/go-api
     ports:
       - "8080:8080"
-    volumes:
-      - ./app:/go/src/github.com/doutori/grpc-sample/go-api
-      - /go/src/github.com/doutori/grpc-sample/
+    # volumes:
+    #   - ./go-api:/go/src/github.com/doutori/grpc-sample/go-api
+    #   - /go/src/github.com/doutori/grpc-sample/
     # command: realize start -path="." --no-config --run
-    command: /go/bin/go-api
+    command: go run main.go
+  web:
+    container_name: web
+    build:
+      context: web
+    ports:
+      - "3000:3000"
+    command: npm start

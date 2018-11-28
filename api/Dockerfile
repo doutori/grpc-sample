@@ -7,8 +7,8 @@ RUN mkdir -p /go/src \
 
 ARG src_path
 
-RUN mkdir -p $GOPATH/$src_path
-ADD . $GOPATH/$src_path
+RUN mkdir -p "$GOPATH/$src_path"
+COPY . $GOPATH/$src_path
 WORKDIR $GOPATH/$src_path
 # RUN apt-get update \
 #     && apt-get -y install curl jq \
