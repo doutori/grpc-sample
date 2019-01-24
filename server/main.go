@@ -4,8 +4,8 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/doutori/grpc-sample/api/pb"
-	"github.com/doutori/grpc-sample/api/services"
+	pb "github.com/doutori/grpc-sample/pb"
+	"github.com/doutori/grpc-sample/server/services"
 	"google.golang.org/grpc"
 )
 
@@ -14,6 +14,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	log.Println("Starting Server!")
+
 	s := grpc.NewServer()
 	catService := &services.MyCatService{}
 

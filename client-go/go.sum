@@ -1,6 +1,7 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
-github.com/doutori/grpc-sample v0.0.0-20181128033556-bf463dc7da58 h1:B9PegpWkCYwfHqyOMpQWn4+JwroPYTZ9EQC4PSgHFNI=
+github.com/doutori/grpc-sample v0.0.0-20190124145142-a714e4942224 h1:uTl3stBHgPWAnY9z8aY0OmOXMY76CPQJ7LrOGU3rjtE=
+github.com/doutori/grpc-sample v0.0.0-20190124145142-a714e4942224/go.mod h1:5GRTC7YAIPZzP42JFVsQw9QXJx/8vV7GAuBeLlnT0pw=
 github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfUlaOkMMuAQtPIUF8ecWP5IEl/CR7VP2Q=
 github.com/golang/mock v1.1.1/go.mod h1:oTYuIxOrZwtPieC+H1uAHpcLFnEyAGVDL/k47Jfbm0A=
 github.com/golang/protobuf v1.2.0 h1:P3YflyNX/ehuJFLhxviNdFxQPkGK5cDcApsge1SqnvM=
